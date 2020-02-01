@@ -3,7 +3,6 @@ import TodoForm from '../../component/Todos/Content/TodoForm';
 import TodoList from '../../component/Todos/Content/TodoList';
 import './Todos.scss';
 
-
 const Todo:FC = (props) => {
    const [todos,setTodos] = useState<any>([
      {
@@ -53,6 +52,5 @@ const Todo:FC = (props) => {
     </div>
   )
 }
-
 
 export default Todo;
