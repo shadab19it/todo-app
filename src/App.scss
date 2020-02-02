@@ -1,0 +1,41 @@
+$hf-color: #4b6cb7;
+
+
+body{
+    -webkit-scrollbar: !important;
+}
+.App{
+    width: 100%;
+    min-height: 100vh;
+
+    .ant-layout-header{
+        background:$hf-color;
+        text-align: center;
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5) !important;
+
+        h1{
+          color:white !important;
+        }
+
+    }
+
+    .main-content{
+        height: 100vh;
+
+        
+
+    }
+ 
+
+
+
+    .ant-layout-footer{
+        border-top: 1px solid rgb(145, 141, 141);
+        background:$hf-color;
+        text-align: center;
+
+        h1{
+            color: #fff;
+        }
+    }
+}

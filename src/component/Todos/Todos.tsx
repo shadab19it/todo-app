@@ -1,4 +1,5 @@
 import React,{useState,FC} from 'react';
+import {Card, List} from 'antd'
 import TodoForm from '../../component/Todos/Content/TodoForm';
 import TodoList from '../../component/Todos/Content/TodoList';
 import './Todos.scss';
@@ -35,8 +36,7 @@ const Todo:FC = (props) => {
 
   return (
     <div className="todoContent">
-      <div className="todo">
-      <h1 className="THeader">Set The Task</h1>
+      <Card title="Set The Task" className="todo">
       <TodoForm addTodo={addTodo} />
       <ol>
          {todos.map((todo:string,index:number) =>(
@@ -49,7 +49,7 @@ const Todo:FC = (props) => {
            />
          ))}
       </ol>  
-      </div>
+      </Card>
     </div>
   )
 }

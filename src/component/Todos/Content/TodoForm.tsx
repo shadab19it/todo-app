@@ -1,4 +1,5 @@
 import React, {useState,FC} from 'react';
+import {Button} from 'antd';
 import  '../../Todos/Todos.scss';
 
 interface TodoFormProps{
@@ -33,7 +34,7 @@ interface TodoFormProps{
          value={value} 
          onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setValue(e.target.value)}
          />
-         <button type="button" className="addbtn btn-grey" onClick={onClick}>Add Todo</button>
+         <Button type="danger" className="addbtn btn-grey" onClick={onClick}>Add Todo</Button>
       </form>
     </div>
     )

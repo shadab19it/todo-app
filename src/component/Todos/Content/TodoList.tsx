@@ -1,4 +1,5 @@
 import React,{FC} from 'react';
+import {Button} from 'antd';
 import  '../../Todos/Todos.scss';
 
 
@@ -16,18 +17,18 @@ interface TodoListProps{
            <li style={{textDecoration:todo.isCompleted ? "line-through":"none"}} >{todo.text}</li>
   
            <div className="ctrl-btn">
-             <button 
-              type="button" 
-              className="donebtn" 
+             <Button 
+              type="primary" 
+              className="donebtn btn" 
               onClick={()=>completeTodo(index)}
               >done
-             </button>
-             <button 
-              type="button" 
-              className="deletebtn" 
+             </Button>
+             <Button 
+              type="danger" 
+              className="deletebtn btn" 
               onClick={()=>deleteTodo(index)}
               >X
-             </button>
+             </Button>
            </div>       
          </div>
     )

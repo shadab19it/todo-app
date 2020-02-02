@@ -3,21 +3,20 @@
     margin: 0;
     padding: 0;
 }
-body {
-    width: 100%;
-    height: 100vh;
-    background: #4b6cb7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
-}
+// body {
+//     width: 100%;
+//     min-height: 100vh;
+    
+// }
 
 .todoContent{
-   padding-top: 120px;
+   padding-top: 100px;
    width: 100%;
    height: auto;
    display: flex;
    justify-content: center;
    align-items: center;
+
    
    .THeader{
      width: 100%;
@@ -32,9 +31,27 @@ body {
 
    .todo{
      width: 380px;
+    //  max-height:400px !important;
+    //  overflow: none scroll !important;
      border-radius: 5px;
      box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
-     overflow: hidden;    
+     overflow: hidden;  
+     background: #4b6cb7;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+     .ant-card-head{
+         color: #fff;
+         font-size: 20px;
+         font-weight: 400;
+         letter-spacing: 1px;
+         min-height: 30px !important;
+         padding:0 18px;
+
+     }
+     .ant-card-body{
+         padding:5px 15px 8px 15px;
+     }
     }
 }
 
@@ -42,30 +59,28 @@ body {
 .todoList{
     display:flex;
     justify-content: space-between;
-    padding:3px 2px 5px 25px;
+    padding:3px 2px 2px 15px;
     border-bottom: 1px solid rgb(161, 154, 154);
-    margin: 5px 8px;
-    font-size: 16px;
+    margin: 5px 5px 10px 5px;
+    font-size: 13px;
     color:rgb(245, 237, 237);
     letter-spacing:.4px;
-    
+
+    .btn{
+        height: 22px;
+        padding:0;
+        font-weight: 550;
+        cursor: pointer; 
+        border-radius: 0 !important;
+        margin-right: 4px; 
+    }
+
     .donebtn{
         width: 55px;
-        margin-right: 3px;
-        cursor: pointer;
-        height: 22px;
-        cursor: pointer;
-        background:rgb(90, 177, 97);
-        border:none;
-        outline:none;
+       
     }
     .deletebtn{
         width: 25px;
-        height: 22px;
-        cursor: pointer;
-        background:rgb(223, 52, 52);
-        border:none;
-        outline:none;
     }
 
 }
@@ -74,15 +89,13 @@ body {
 
 .form{
     display:flex;
-    margin:5px;
-    padding: 5px 0;
-    border-bottom: 1px solid rgb(161, 154, 154);
+    padding: 5px 3px 10px 3px ;
 
     .input{
         width: 100%;
         border: none;
-        padding:6px 10px ;
-        font-size: 16px;
+        padding:0px 8px ;
+        font-size: 14px;
         outline: none;
         box-shadow: inset 0 0 2px 3px rgba(0, 0, 0, 0.158);
         font-weight: 400;
@@ -90,12 +103,13 @@ body {
 
     .addbtn{
         width:115px;
-        border:none;
-        outline:none;
-        background:rgb(219, 75, 142);
+        height: 32px;
         font-weight: 550;
+        padding:6px 8px ;
         cursor: pointer; 
+        border-radius: 0 !important;
         margin-right: 4px; 
+
     }
    
     
