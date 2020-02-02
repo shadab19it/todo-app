@@ -14,7 +14,7 @@ interface TodoListProps{
     const {todo,index,deleteTodo,completeTodo} = props;
     return(
          <div className="todoList">
-           <li style={{textDecoration:todo.isCompleted ? "line-through":"none"}} >{todo.text}</li>
+           <li style={{textDecoration:todo.isCompleted ? "line-through":"none"}} className="list-item">{todo.text}</li>
   
            <div className="ctrl-btn">
              <Button 

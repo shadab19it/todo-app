@@ -5,13 +5,14 @@ import TodoList from '../../component/Todos/Content/TodoList';
 import './Todos.scss';
 
 const Todo:FC = (props) => {
-   const [todos,setTodos] = useState<any>([
+   const [todos,setTodos] = useState<Array<{text: string, isCompleted?: boolean}>>([
      {
        text:'learn about react',
-      //  isCompleted: false
+       isCompleted: false
      },
      {
        text:'Build some amazing product',
+       isCompleted: false
      },
    ])
 
@@ -38,7 +39,7 @@ const Todo:FC = (props) => {
       <Card title="Set The Task" className="todo">
       <TodoForm addTodo={addTodo} />
       <ol>
-         {todos.map((todo:string,index:number) =>(
+         {todos.map((todo,index) =>(
            <TodoList 
             todo={todo} 
             index={index} 

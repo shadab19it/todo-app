@@ -61,10 +61,17 @@
     justify-content: space-between;
     padding:3px 2px 2px 15px;
     border-bottom: 1px solid rgb(161, 154, 154);
-    margin: 5px 5px 10px 5px;
+    margin: 5px 0px 10px 5px;
     font-size: 13px;
     color:rgb(245, 237, 237);
     letter-spacing:.4px;
+
+    .list-item{
+        width: 220px;
+        margin-right:10px;
+        overflow-wrap: break;
+        word-wrap: break-word;
+    }
 
     .btn{
         height: 22px;
