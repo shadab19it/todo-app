@@ -3,11 +3,6 @@
     margin: 0;
     padding: 0;
 }
-// body {
-//     width: 100%;
-//     min-height: 100vh;
-    
-// }
 
 .todoContent{
    padding-top: 100px;
@@ -31,8 +26,6 @@
 
    .todo{
      width: 380px;
-    //  max-height:400px !important;
-    //  overflow: none scroll !important;
      border-radius: 5px;
      box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
      overflow: hidden;  
@@ -91,8 +84,6 @@
     }
 
 }
-
-
 
 .form{
     display:flex;
